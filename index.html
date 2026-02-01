@@ -1,25 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Jane Designs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GP Graphics | Creative Design Studio</title>
+
   <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      background: #f4f4f4;
-      padding: 50px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    img {
-      width: 200px;
-      border-radius: 50%;
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.05rem;
+    }
+
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .portfolio img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.95rem;
+      opacity: 0.9;
     }
   </style>
 </head>
+
 <body>
 
-  <img src="profile.jpg" alt="Designer Photo">
-  <h1>Jane Doe</h1>
-  <p>Graphic Designer | Logo | Branding | UI</p>
+  <!-- HERO SECTION -->
+  <header>
+    <h1>GP Graphics</h1>
+    <p>Creative Graphic Design & Visual Branding</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      GP Graphics is a creative design studio focused on delivering
+      clean, modern, and impactful visual solutions.
+      We help brands stand out through professional graphic design,
+      branding, and digital creativity.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section>
+    <h2 style="text-align:center;">Our Services</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>Logo Design</h3>
+        <p>Unique and memorable logos that represent your brand identity.</p>
+      </div>
+
+      <div class="card">
+        <h3>Branding</h3>
+        <p>Complete brand visuals including colors, typography, and style.</p>
+      </div>
+
+      <div class="card">
+        <h3>Social Media Design</h3>
+        <p>Eye-catching posts and banners that boost online engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section>
+    <h2 style="text-align:center;">Portfolio</h2>
+
+    <div class="portfolio">
+      <img src="design1.jpg" alt="Design sample 1">
+      <img src="design2.jpg" alt="Design sample 2">
+      <img src="design3.jpg" alt="Design sample 3">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 GP Graphics. All Rights Reserved.</p>
+    <p>Contact: gpgraphics@email.com</p>
+  </footer>
 
 </body>
-</html>
+  </html>
